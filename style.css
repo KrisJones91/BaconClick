@@ -1,0 +1,25 @@
+.main-bg{
+    background-image: url('https://i.pinimg.com/originals/5c/c0/d7/5cc0d7bd98a28bdcd8d0916e5db7bd7e.gif');
+    background-size: cover;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
+header{
+    min-height: 8vh;
+}
+.card{
+    background-color: rgb(187, 91, 56);
+    border-radius: 2%;
+}
+.earth-button.hover{
+     
+}
+.fa-spin{
+    animation-duration: 5s;
+}
