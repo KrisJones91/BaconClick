@@ -18,13 +18,13 @@ let clickUpgrades = {
     farmers: {
         price: 15,
         quantity: 0,
-        multiplier: 2,
+        multiplier: 5,
         adder: 0
     },
     factories: {
         price: 50,
         quantity: 0,
-        multiplier: 2,
+        multiplier: 10,
         adder: 0
     }
 }
@@ -58,9 +58,9 @@ function buyUpgrades(type) {
         clickUpgrades[type].price = clickUpgrades[type].price * clickUpgrades[type].multiplier
         //upgrades continue adding as you purchase
         clickUpgrades[type].quantity++
-        clickUpgrades[type].quantity = clickUpgrades[type].quantity + clickUpgrades[type].adder
+        //clickUpgrades[type].quantity = clickUpgrades[type].quantity + clickUpgrades[type].adder
         //click counts stack with earth clicks
-        modifier = clickUpgrades[type].quantity + modifier
+        modifier += clickUpgrades[type].quantity * clickUpgrades[type].multiplier
         //autoupgrades
 
     }
