@@ -1,6 +1,7 @@
 .main-bg{
-    background-image: url('https://i.pinimg.com/originals/5c/c0/d7/5cc0d7bd98a28bdcd8d0916e5db7bd7e.gif');
-    background-size: cover;
+    background-image: url('https://media1.giphy.com/media/8PsT3SPndpYBloAosN/giphy-preview.gif');
+    background-color: black;
+    background-size: 50px;
 }
 body {
   display: flex;
@@ -10,16 +11,17 @@ body {
 main {
   flex-grow: 1;
 }
-header{
-    min-height: 8vh;
-}
 .card{
-    background-color: rgb(187, 91, 56);
+    background-color: rgb(202, 93, 202);
     border-radius: 2%;
-}
-.earth-button.hover{
-     
+    text-shadow: 1rem;
+    color: white;
 }
 .fa-spin{
-    animation-duration: 5s;
+    animation-duration: 8s;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
 }

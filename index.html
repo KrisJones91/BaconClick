@@ -19,43 +19,47 @@
 </head>
 
 <body>
-
+    <audio src="preview.mp3" id="song"></audio>
     <main class="container-fluid main-bg">
         <div class="row justify-content-center">
             <div class="col-6 p-2">
                 <div class="card align-items-center">
                     <h2>Click Counter</h2>
                     <!-- click count -->
-                    <h5>Money: <span id="money"></span></h5>
-                    <p>Spend money to earn planets</p>
+                    <h5>Bacon: <span id="oinks"></span></h5>
+
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row p-5 justify-content-center">
             <div>
-                <button class="btn earth-button fa-spin fa-3x hidden" onclick="earth()"><img src="earth_PNG18.png"
-                        style="width:400px;height:400px;"></button>
+                <button class="btn fa-spin" onclick="pig()"><img
+                        src="http://pngimg.com/uploads/piggy_bank/piggy_bank_PNG21.png"
+                        style="width:250px;height:250px;"></button>
             </div>
         </div>
         <div class="row py-3">
             <div class="col-6">
                 <div class="card text-center">
                     <h2>Upgrades</h2>
-                    <button class="btn btn-danger" onclick="buyUpgrades('food')">Food (<span id="food">0</span>)
-                        Qty:(<span id="food-q">0</span>)</button>
-                    <button class="btn btn-primary" onclick="buyUpgrades('water')">Water (<span id="water">0</span>)
-                        Qty:(<span id="water-q">0</span>)</button>
-                    <button class="btn btn-warning" onclick="buyUpgrades('jobs')">Jobs (<span id="jobs">0</span>)
-                        Qty:(<span id="jobs-q">0</span>)</button>
-                    <button class="btn btn-success" onclick="buyUpgrades('houses')">Houses (<span id="houses">0</span>)
-                        Qty:(<span id="houses-q">0</span>)</button>
+                    <button class="btn btn-danger" onclick="buyUpgrades('mud')">Mud: (<span id="mud">0</span>)
+                        Qty:(<span id="mud-q">0</span>)</button>
+                    <button class="btn btn-primary" onclick="buyUpgrades('pens')">Pig-pens: (<span id="pens">0</span>)
+                        Qty:(<span id="pens-q">0</span>)</button>
+                    <button class="btn btn-warning" onclick="buyUpgrades('farmers')">Farmers: (<span
+                            id="farmers">0</span>)
+                        Qty:(<span id="farmers-q">0</span>)</button>
+                    <button class="btn btn-success" onclick="buyUpgrades('factories')">Factories: (<span
+                            id="factories">0</span>)
+                        Qty:(<span id="factories-q">0</span>)</button>
                 </div>
             </div>
             <div class="col-6">
                 <div class="card text-center">
-                    <h2>Money Generator</h2>
+                    <h2>Bacon Generator</h2>
                     <div class="col-12 ">
-                        <button class="btn btn-success">Money</button>
+                        <button class="btn btn-success" onclick="buyAuto('addoinks')">Bacon</button>
+                        <p>Additional Bacon (<span id="addoinks">0</span>)</p>
 
                     </div>
                 </div>
